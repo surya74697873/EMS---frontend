@@ -14,7 +14,8 @@ const Home = () => {
             </Link>
       </div>
       <div>
-        <TableView url="http://localhost:1111/api/employees" />
+        <TableView url="https://ems-springboot-50026276785.development.catalystappsail.in" />
+        {/* <TableView url="http://localhost:1111/api/employees" /> */}
       </div>
     </div>
     );

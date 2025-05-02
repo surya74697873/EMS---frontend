@@ -7,12 +7,13 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/add" element={<FillUpForm url="http://localhost:1111/api/employees" isUpdate={false}/>} />
-        <Route path="/update/:id" element={<FillUpForm url="http://localhost:1111/api/employees" isUpdate={true}/>} />
+        <Route path="/add" element={<FillUpForm url="https://ems-springboot-50026276785.development.catalystappsail.in" isUpdate={false}/>} />
+        <Route path="/update/:id" element={<FillUpForm url="https://ems-springboot-50026276785.development.catalystappsail.in" isUpdate={true}/>} />
       </Routes>
     
     </BrowserRouter>
   );
 }
-
+// https://ems-springboot-50026276785.development.catalystappsail.in
+// http://localhost:1111/api/employees
 export default App;
