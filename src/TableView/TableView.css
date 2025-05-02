@@ -1,0 +1,38 @@
+.TableView{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    display: flex;
+}
+
+table{
+    border: 1px solid;
+    flex: 1;
+    text-align: center;
+}
+
+td, th{
+    border: 1px solid;
+    padding: .4em;
+}
+
+.edit{
+    display: flex;
+    place-items: center;
+}
+
+td > button{
+    border-radius: .8em;
+    border: none;
+    margin: 0 3px 0 5px ;
+}
+
+.update{
+    background-color: rgb(54, 210, 54);
+}
+
+.delete{
+    background-color: rgb(247, 8, 8);
+}

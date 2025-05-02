@@ -1,0 +1,9 @@
+
+.Headers{
+  color: whitesmoke;
+  background-color: #85e9dc;
+  padding: .5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
