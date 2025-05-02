@@ -8,7 +8,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/add" element={<FillUpForm url="https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees" isUpdate={false}/>} />
-        <Route path="/update/:id" element={<FillUpForm url="https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employee" isUpdate={true}/>} />
+        <Route path="/update/:id" element={<FillUpForm url="https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees" isUpdate={true}/>} />
       </Routes>
     
     </BrowserRouter>

@@ -23,7 +23,7 @@ const FillUpForm = ({ url, isUpdate }) => {
   async function postEmployeeRecord() {
 
 
-    fetch(url + "/", {
+    fetch(`${url}/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -41,7 +41,7 @@ const FillUpForm = ({ url, isUpdate }) => {
   }
 
   async function updateRecord() {
-    fetch(url + "/" + id, {
+    fetch(`${url}/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
