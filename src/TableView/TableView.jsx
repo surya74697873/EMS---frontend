@@ -23,6 +23,8 @@ const TableView = ({ url }) => {
     console.log(result.message);
     
   }
+
+  
   async function getAllRecords() {
     let response = await fetch(url + "/");
     let records = await response.json();

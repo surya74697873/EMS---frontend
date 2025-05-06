@@ -20,7 +20,7 @@ const FillUpForm = ({ url, isUpdate }) => {
     pageNavigate("/");
   }
 
-  async function postEmployeeRecord() {
+ function postEmployeeRecord() {
 
 
     fetch(`${url}/`, {
@@ -37,10 +37,12 @@ const FillUpForm = ({ url, isUpdate }) => {
       }),
     });
 
-    backHomePage();
+    setTimeout(() => {
+      backHomePage()
+    }, 1000);
   }
 
-  async function updateRecord() {
+  function updateRecord() {
     fetch(`${url}/${id}`, {
       method: "PUT",
       headers: {
@@ -54,11 +56,12 @@ const FillUpForm = ({ url, isUpdate }) => {
         branchName: employeeBranch,
       }),
     });
-
-    backHomePage();
+    setTimeout(() => {
+      backHomePage()
+    }, 1000);
   }
 
-  async function getRecord() {
+  function getRecord() {
     fetch(`${url}/${id}`)
       .then((response) => response.json())
       .then((record) => {
