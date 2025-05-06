@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import TableView from './TableView/TableView';
 import "./Home.css"
+import url from './URL';
 
 const Home = () => {
   
@@ -15,7 +16,7 @@ const Home = () => {
             </Link>
       </div>
       <div>
-        <TableView url="https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees" />
+        <TableView url={url} />
         {/* <TableView url="http://localhost:1111/api/employees" /> */}
       </div>
     </div>

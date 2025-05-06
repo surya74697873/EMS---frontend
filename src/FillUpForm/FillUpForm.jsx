@@ -9,7 +9,7 @@ const FillUpForm = ({ url, isUpdate }) => {
   const [employeeEmail, setEmployeeEmail] = useState("");
   const [employeeDepartment, setEmployeeDepartment] = useState("");
   const [employeeBranch, setEmployeeBranch] = useState("");
-  const { id } = useParams();
+  const  {id} = useParams();
   const pageNavigate = useNavigate();
 
   useEffect(() => {
