@@ -25,7 +25,6 @@ const FillUpForm = ({ url, isUpdate }) => {
 
     fetch(`${url}/`, {
       method: "POST",
-      credentials : "include",
       headers: {
         "Content-Type": "application/json",
       },
@@ -44,7 +43,6 @@ const FillUpForm = ({ url, isUpdate }) => {
   async function updateRecord() {
     fetch(`${url}/${id}`, {
       method: "PUT",
-      credentials : "include",
       headers: {
         "Content-Type": "application/json",
       },
@@ -61,7 +59,7 @@ const FillUpForm = ({ url, isUpdate }) => {
   }
 
   async function getRecord() {
-    fetch(`${url}/${id}`,{ credentials : "include" })
+    fetch(`${url}/${id}`)
       .then((response) => response.json())
       .then((record) => {
         setEmployeeId(record.id);

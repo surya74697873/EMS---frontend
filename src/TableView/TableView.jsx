@@ -15,8 +15,7 @@ const TableView = ({ url }) => {
     })
 
     let response = await fetch(url + '/' + id,{
-        method : "DELETE",
-        credentials : "include"
+        method : "DELETE"
     })
 
     let result = await response.json();
@@ -25,7 +24,7 @@ const TableView = ({ url }) => {
     
   }
   async function getAllRecords() {
-    let response = await fetch(url + "/",{ credentials : "include"});
+    let response = await fetch(url + "/");
     let records = await response.json();
 
       console.log(records);
