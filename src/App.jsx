@@ -4,7 +4,7 @@ import FillUpForm from "./FillUpForm/FillUpForm";
 
 const App = () => {
 
-  fetch('https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees', {
+  fetch('https://ems-backend-springboot-50026276785.development.catalystappsail.in/api/employees/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
@@ -12,7 +12,7 @@ const App = () => {
     credentials: 'include',
     body: new URLSearchParams({
       username: 'vijay',
-      password: 'thalapathc69',
+      password: 'thalapath69',
     }),
   })
     .then(res => {
