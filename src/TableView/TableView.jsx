@@ -15,7 +15,8 @@ const TableView = ({ url }) => {
     })
 
     let response = await fetch(url + '/' + id,{
-        method : "DELETE"
+        method : "DELETE",
+        credentials : "include"
     })
 
     let result = await response.json();

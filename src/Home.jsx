@@ -3,6 +3,27 @@ import TableView from './TableView/TableView';
 import "./Home.css"
 
 const Home = () => {
+
+  fetch('https://your-backend.com/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    credentials: 'include',
+    body: new URLSearchParams({
+      username: 'vijay',
+      password: 'thalapathy69',
+    }),
+  })
+    .then(res => {
+      if (res.ok) {
+        console.log("✅ Logged in successfully");
+      } else {
+        console.log("❌ Login failed");
+      }
+    });
+  
+  
     return (
         <div className='EMS'>
       <div className="Headers">
