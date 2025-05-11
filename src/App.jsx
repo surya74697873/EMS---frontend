@@ -14,6 +14,5 @@ const App = () => {
     </BrowserRouter>
   );
 }
-// https://ems-backend-springboot-50026276785.development.catalystappsail.in
-// http://localhost:1111/api/employees
+
 export default App;
